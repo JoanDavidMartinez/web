@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Arial";
+  display: flex;
+  flex-direction: column;
+  color: white !important;
+  background-color: black !important;
+}
+
+.bg-custom {
+  background-color: transparent;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.collapsing.bg-custom,
+  .navbar-collapse.collapse.show.bg-custom {
+    background-color: #54d8a7; 
+    position: absolute;
+
+    z-index: 1;
+    top: 100%; /* Ajustar para que aparezca debajo de la barra de navegación */
+    left: 0;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: 80%; 
+    z-index: 1;
+  }
+}
+
+/* Estilos para pantallas pequeñas cuando la navbar está expandida */
+@media (max-width: 768px) {
+  .navbar-collapse.collapsing.bg-custom,
+  .navbar-collapse.collapse.show.bg-custom {
+    background-color: #54d8a7; 
+    position: absolute;
+
+    z-index: 1;
+    top: 100%; /* Ajustar para que aparezca debajo de la barra de navegación */
+    left: 0;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: 80%; 
+    z-index: 1;
+  }
+}
+
+.carousel-item a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#videoBlank{
+  top: 0;
+  padding-top: 29vw;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.app{
+  width: 3vw;
+  height: 3vw;
+}
+
+@media (max-width: 991px) {
+  #videoBlank {
+      padding-top: 40vw;
+  }
+
+  .video-bg {
+    width: 140% !important;
+    left: -20% !important;
+  }
+
+  .app{
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #videoBlank{
+      padding-top: 54vw;
+  }
+
+  .video-bg {
+    width: 200% !important;
+    left: -50% !important;
+  }
+
+  .app{
+    margin-top: 0.5vw;
+    width: 7vw;
+    height: 7vw;
+  }
+}
+
+
+
+
+#videoButton{
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+#apps{
+  display: block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 2vw;
+  padding-bottom: 6vw;
+}
+
+#apps a{
+  text-decoration: none;
+  margin: 0.5vw;
+}
+
+
+
+#tour{
+  position: static;
+}
+
+#myCarousel{
+  position: relative;
+}
+
+
+#footer{
+  background-color: black;
+  text-align: center;
+}
+
+#email{
+  color: black;
+  border-color: #54d8a7;
+}
+
+#submit{
+  background-color: #54d8a7;
+  border-color: #54d8a7;
+}
+
+#footer a {
+  color: #54d8a7 !important;
+  text-decoration: underline !important;
+}
+
+#footer p {
+  margin-top: 0vw !important;
+  margin: 2vw;
+}
+
+.search-query {
+  background-color: #26282d;
+  width: 100%;
+  border: 2px;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.list-group-item.active {
+  border-color: #54d8a7 !important;   
+}

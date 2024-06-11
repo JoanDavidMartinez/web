@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phantom Pulse</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="sendMail.js"></script>
+    <link rel="stylesheet" type="text/css" href="general.css">
+
+  </head>
+  <body>
+    <div style="background: none !important; overflow: hidden;">
+      <div class="video-bg sm:max-w-full md:max-w-5xl lg:max-w-6xl" style="position: absolute; top: 0; left: 0; width: 100%; z-index: -1;">
+        <video style="width: 100%;" autoplay muted playsinline loop src="vid/bg.mp4"></video>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light mt-md-3" id="nav">
+        <div class="container-fluid px-md-5">
+          <a class="navbar-brand pb-md-4" href="home.html"><img src="img/logo.png" alt="Phantom Pulse"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsMain" aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/drop.png" alt="Toggle Navigation">
+          </button>
+          <div class="navbar-collapse justify-content-center collapse bg-custom" id="navbarsMain" style>
+            <ul class="navbar-nav mb-2 mb-md-4">
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="tour.html">
+                  <img src="img/tour.png" class="d-none d-lg-inline">
+                  <span class="d-inline d-lg-none text-light px-2">TOUR</span>
+                </a>
+              </li>
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="music.html">
+                  <img src="img/music.png" class="d-none d-lg-inline">
+                  <span class="d-inline d-lg-none text-light px-2">MUSIC</span>
+                  </a>
+                </li>
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="http://www.merchbar.com">
+                  <img src="img/merch.png" class="d-none d-lg-inline">
+                  <span class="d-inline d-lg-none text-light px-2">MUSIC</span>
+                </a>
+              </li>
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="#footer">
+                  <img src="img/email.png" class="d-none d-lg-inline">
+                  <span class="d-inline d-lg-none text-light px-2">EMAIL</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container justify-content-center" id="videoBlank">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+      
+      <!-- <div id="videoBlank"></div> -->
+
+      <div id="videoButton">
+        <a href="http://www.spotify.com">
+          <button id="streamAlbum" style="border-color:#54d8a7;color:white;background-color:transparent">Reproducir</button>
+        </a>
+        <a href="http://www.amazon.com">
+          <button id="purchaseAlbum" style="border-color:#54d8a7;color:white;background-color:transparent">Comprar</button>
+        </a>
+      </div>
+
+      <div id="apps">
+        <a href="http://www.spotify.com">
+          <img src="img/logo/spotify.png" alt="Spotify" class="app">
+        </a>
+        <a href="http://music.amazon.com">
+          <img src="img/logo/amazon.png" alt="Amazon music" class="app">
+        </a>
+        <a href="http://www.youtube.com">
+          <img src="img/logo/youtube.png" alt="YouTube" class="app">
+        </a>
+        <a href="http://www.deezer.com">
+          <img src="img/logo/deezer.png" alt="Deezer" class="app">
+        </a>
+        <a href="http://www.tidal.com">
+          <img src="img/logo/tidal.png" alt="Tidal" class="app">
+        </a>
+        <a href="http://music.apple.com">
+          <img src="img/logo/apple.png" alt="Apple Music" class="app">
+        </a>
+      </div>
+    </div>
+  </div>
+    <div id="tour">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="tour.html">
+              <img src="img/output.png" alt="TOUR" width="1100" height="500">
+            </a>
+          </div>
+    
+          <div class="carousel-item">
+            <a href="tour.html">
+              <img src="img/output2.png" alt="Chicago" width="1100" height="500">
+            </a>
+          </div>
+        
+          <div class="carousel-item">
+            <a href="tour.html">
+              <img src="img/output3.png" alt="New york" width="1100" height="500">
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="tour.html">
+              <img src="img/output4.png" alt="New york" width="1100" height="500">
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="tour.html">
+              <img src="img/output5.png" alt="New york" width="1100" height="500">
+            </a>
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>  
+
+    <section id="footer">
+      <form id="mail2db" method="post" style="margin-top: 1rem">
+        <img src="img/ghost.png" style="height: 3rem; width: 3rem; margin-right: 0.5vw;"><label for="email"><img src="img/join.png" style="height: 3rem; width: 5rem"></label><input type="email" id="email" name="email" placeholder="Email" required><input type="submit" value="SIGN UP" id="submit"><img src="img/ghost2.png" style="height: 3rem; width: 3rem">
+      </form>
+      <div id="resultadoE"></div>
+      <p>Suscribete con tu dirección email para seguir las últimas noticias de Phantom Pulse.</p>
+      <a href="#nav">
+        <img src="img/logo.png" style="height: 2rem; width: 2rem; margin-top: 1rem">
+      </a>
+      <p style="margin-bottom: 0.5vw !important;">© 2024 Phantom Pulse. <a href="privacy.html">Política de privacidad y Términos de uso</a></p>
+    </section>
+  </body>
+</html>

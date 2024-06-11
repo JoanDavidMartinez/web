@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Phantom Pulse</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <script src="getTour.js"></script>
+    <script src="sendMail.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light mt-md-3" id="nav">
+      <div class="container-fluid px-md-5">
+        <a class="navbar-brand pb-md-4" href="home.html"><img src="img/logo.png" alt="Phantom Pulse"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsMain" aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/drop.png" alt="Toggle Navigation">
+        </button>
+        <div class="navbar-collapse justify-content-center collapse bg-custom" id="navbarsMain" style>
+          <ul class="navbar-nav mb-2 mb-md-4">
+            <li class="nav-item mx-md-4">
+              <a class="nav-link" href="tour.html">
+                <img src="img/tour.png" class="d-none d-md-inline tex">
+                <span class="d-inline d-md-none text-light px-2">TOUR</span>
+              </a>
+            </li>
+            <li class="nav-item mx-md-4">
+              <a class="nav-link" href="music.html">
+                <img src="img/music.png" class="d-none d-md-inline">
+                <span class="d-inline d-md-none text-light px-2">MUSIC</span>
+                </a>
+              </li>
+            <li class="nav-item mx-md-4">
+              <a class="nav-link" href="http://www.merchbar.com">
+                <img src="img/merch.png" class="d-none d-md-inline">
+                <span class="d-inline d-md-none text-light px-2">MUSIC</span>
+              </a>
+            </li>
+            <li class="nav-item mx-md-4">
+              <a class="nav-link" href="#footer">
+                <img src="img/email.png" class="d-none d-md-inline">
+                <span class="d-inline d-md-none text-light px-2">EMAIL</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div style="height:10px"></div>
+
+    <div class="tour">        
+      <h1 class="text-center" style="text-shadow: 1px 1px 2px black , 0 0 25px #54d8a7;">TOUR</h1>
+      <table class="table table-borderless text-center text-light">
+        <tbody>
+          <div id ="resultado" class="text"></div>
+        </tbody>
+      </table>
+      
+    </div>
+    
+    </body>
+    </html>
+    
+    <section id="footer">
+      <form id="mail2db" method="post" style="margin-top: 1rem">
+        <img src="img/ghost.png" style="height: 3rem; width: 3rem; margin-right: 0.5vw;"><label for="email"><img src="img/join.png" style="height: 3rem; width: 5rem"></label><input type="email" id="email" name="email" placeholder="Email" required><input type="submit" value="SIGN UP" id="submit"><img src="img/ghost2.png" style="height: 3rem; width: 3rem">
+      </form>
+      <div id="resultadoE"></div>
+      <p>Suscribete con tu dirección email para seguir las últimas noticias de Phantom Pulse.</p>
+      <a href="#nav">
+        <img src="img/logo.png" style="height: 2rem; width: 2rem; margin-top: 1rem">
+      </a>
+      <p style="margin-bottom: 0.5vw !important;">© 2024 Phantom Pulse. <a href="privacy.html">Política de privacidad y Términos de uso</a></p>
+    </section>
+  </body>
+</html>
